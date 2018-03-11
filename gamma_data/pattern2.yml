@@ -1,0 +1,20 @@
+- data:
+    table:
+      - "products"
+    mode: "replace"
+    delta_column: "updated_at"
+    hooks:
+      - row:
+          scripts:
+            - "hooks/copy_image.rb"
+- data:
+    table:
+      - "users"
+    mode: "replace"
+    delta_column: "updated_at"
+    hooks:
+      - column:
+          name:
+            - "email"
+          scripts:
+            - "hooks/mask_email.rb"

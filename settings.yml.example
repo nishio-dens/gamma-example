@@ -1,0 +1,16 @@
+in_database_config:
+  adapter: mysql2
+  encoding: utf8
+  database: gamma_production
+  pool: 5
+  host: localhost
+  username: root
+  password:
+out_database_config:
+  adapter: mysql2
+  encoding: utf8
+  database: gamma_development
+  pool: 5
+  host: localhost
+  username: root
+  password:

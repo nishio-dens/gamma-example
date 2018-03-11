@@ -1,0 +1,7 @@
+- data:
+    table:
+      - "*"
+    table_without:
+      - "ar_internal_metadata"
+    mode: "replace"
+    delta_column: "updated_at"
